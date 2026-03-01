@@ -50,7 +50,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="text-white/30 text-xs">
-            © 2025 <span className="text-[#F5A623]">CV Bangda Bertiga Karya</span>. All rights reserved.
+            © 2026 <span className="text-[#F5A623]">CV Bangda Bertiga Karya</span>. All rights reserved.
           </p>
           <div className="flex gap-5">
             {["Kebijakan Privasi", "Syarat & Ketentuan"].map((item) => (
