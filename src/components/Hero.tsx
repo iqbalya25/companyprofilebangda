@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-[calc(100vh-56px)] flex items-center overflow-hidden bg-[#081A3A]"
+      className="relative min-h-[calc(100dvh-56px)] flex items-center overflow-hidden bg-[#081A3A]"
     >
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -27,7 +27,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 px-[5%] py-20 max-w-2xl">
+      <div className="relative z-10 px-[5%] py-20 max-w-4xl">
         <div className="inline-flex items-center gap-2 bg-[#F5A623]/12 border border-[#F5A623]/30 text-[#F5A623] text-xs font-semibold tracking-[0.1em] uppercase px-4 py-1.5 rounded-sm mb-7">
           <span className="w-1.5 h-1.5 bg-[#F5A623] rounded-full" />
           Payment &amp; Technology Solutions
@@ -35,7 +35,7 @@ export default function Hero() {
 
         <h1
           className="font-display font-extrabold text-white leading-[1.1] tracking-tight mb-6"
-          style={{ fontSize: "clamp(36px, 7vw, 50px)" }}
+          style={{ fontSize: "clamp(28px, 7vw, 50px)" }}
         >
           Solusi Pembayaran &amp;
           <br />
@@ -53,10 +53,14 @@ export default function Hero() {
           hingga pengadaan perangkat &amp; solusi IT terpadu.
         </p>
 
-        <div className="flex flex-wrap gap-4">
+        {/*
+          FIX 2: Equal-width buttons on mobile (flex-col + w-full),
+          side-by-side on desktop (sm:flex-row + sm:w-auto).
+        */}
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="#services"
-            className="inline-flex items-center gap-2 bg-[#F5A623] hover:bg-[#FFBE55] text-[#081A3A] font-semibold text-sm px-8 py-3.5 rounded transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(245,166,35,0.35)] no-underline"
+            className="inline-flex items-center justify-center gap-2 bg-[#F5A623] hover:bg-[#FFBE55] text-[#081A3A] font-semibold text-sm px-8 py-3.5 rounded transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(245,166,35,0.35)] no-underline w-full sm:w-auto"
           >
             <svg
               width="16"
@@ -75,7 +79,7 @@ export default function Hero() {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center text-white font-medium text-sm px-8 py-3.5 rounded border border-white/30 hover:border-white/70 hover:bg-white/[0.07] transition-all no-underline"
+            className="inline-flex items-center justify-center text-white font-medium text-sm px-8 py-3.5 rounded border border-white/30 hover:border-white/70 hover:bg-white/[0.07] transition-all no-underline w-full sm:w-auto"
           >
             Konsultasi Gratis
           </a>
