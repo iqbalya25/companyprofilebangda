@@ -1,4 +1,4 @@
-// File: C:\Users\iqbal\Downloads\bangda-bertiga-karya\bangda-bertiga-karya\src\app\page.tsx
+// File: D:\Iqbal\Website\bangda-bertiga-karya\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

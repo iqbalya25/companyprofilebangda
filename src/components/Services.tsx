@@ -39,6 +39,18 @@ const services = [
     image: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80&auto=format&fit=crop",
     delay: "delay-2",
   },
+  {
+    title: "Merchandising Solutions",
+    desc: "Produksi merchandise & produk promosi berlogo perusahaan — dari gelas, botol minum, hingga corporate gift berkualitas untuk memperkuat brand identity bisnis Anda.",
+    points: [
+      "Tumbler, Gelas & Botol Minum Berlogo",
+      "Corporate Gift & Souvenir Promosi",
+      "Custom Merchandise (Kaos, Topi, Tas)",
+      "Branding & Packaging Kustom",
+    ],
+    image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80&auto=format&fit=crop",
+    delay: "delay-3",
+  },
 ];
 
 export default function Services() {
@@ -71,7 +83,7 @@ export default function Services() {
             className="font-display font-extrabold text-white leading-tight tracking-tight"
             style={{ fontSize: "clamp(26px, 3.5vw, 42px)" }}
           >
-            3 Pilar Solusi<br />Bisnis Kami
+            4 Pilar Solusi<br />Bisnis Kami
           </h2>
         </div>
         <p className="text-white/55 font-light text-base max-w-xs md:text-right leading-relaxed">
@@ -79,8 +91,8 @@ export default function Services() {
         </p>
       </div>
 
-      {/* Cards */}
-      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+      {/* Cards — 2x2 grid on desktop, 1 col on mobile */}
+      <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
         {services.map((svc) => (
           <div
             key={svc.title}
